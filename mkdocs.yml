@@ -9,9 +9,10 @@ theme:
         - navigation.tracking # 在url中使用标题定位锚点
         - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
         - navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
-        - navigation.sections # nav节点缩进
-        - navigation.expand # 不折叠左侧nav节点
+#        - navigation.sections # nav节点缩进
+#        - navigation.expand # 不折叠左侧nav节点
         - navigation.indexes # 指定节点index pages ，跟instant不兼容
+        - navigation.path
         - toc.integrate # 右侧生产目录
         - navigation.top # 一键回顶部  
         - search.suggest
@@ -72,8 +73,13 @@ markdown_extensions:
 nav:
     - 主页: index.md
     - 女娲补天:
-        - 补天 : backend/mends_the_sky.md 
+        - 前言: backend/mends_the_sky.md 
         - 补基础:
             - 基础 : backend/basic/basic.md
             - 红黑树 : backend/basic/red_black_tree.md
+    - 课程: 
+        - content : course/index.md
+        - 编程语言 : 
+            - index : course/programming_languages/index.md
+            - Emacs : course/programming_languages/emacs.md
     - about: about.md
