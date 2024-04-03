@@ -1,0 +1,2 @@
+effective_rust [https://www.lurklurk.org/effective-rust/](https://www.lurklurk.org/effective-rust/) 
+rust cheatsheet [https://nootn.com/rust-language-cheat-sheet/#basic-types](https://nootn.com/rust-language-cheat-sheet/#basic-types) 

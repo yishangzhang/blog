@@ -82,4 +82,7 @@ nav:
         - 编程语言 : 
             - index : course/programming_languages/index.md
             - Emacs : course/programming_languages/emacs.md
+    - 资料:
+        - 非github资料 :
+                - effictive_rust: useful_resource/readeable.md
     - about: about.md
