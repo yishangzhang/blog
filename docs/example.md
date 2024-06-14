@@ -54,7 +54,7 @@ def bubble_sort(items):
 删除线{--deleted--}
 下划线{++added++}
 高亮{==highlighting==}
-tian{~~one ~> asingle~~}  
+tian{~~one ~> a single~~}  
 :smile:
 
 <figure markdown>  

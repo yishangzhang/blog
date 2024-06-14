@@ -78,10 +78,12 @@ nav:
             - 基础 : backend/basic/basic.md
             - 红黑树 : backend/basic/red_black_tree.md
     - 课程: 
-        - content : course/index.md
         - 编程语言 : 
-            - index : course/programming_languages/index.md
+            - OverView : course/programming_languages/index.md
             - Emacs : course/programming_languages/emacs.md
+        - rust:
+            - OverView : course/rust/index.md
+            - CheatSheet : course/rust/rust_cheat_sheet.md
     - 资料:
         - 非github资料 :
                 - effictive_rust: useful_resource/readeable.md
