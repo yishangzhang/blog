@@ -555,6 +555,8 @@
       
         
       
+        
+      
     
     
       
@@ -617,6 +619,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming_languages/partA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PartA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -636,6 +659,8 @@
       
         
           
+        
+      
         
       
         
@@ -693,6 +718,27 @@
   
   <span class="md-ellipsis">
     CheatSheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../questation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    思考
   </span>
   
 
@@ -880,16 +926,16 @@
 <li>
 <p><strong>结构体或枚举</strong>：
   定义一个泛型结构体或枚举时，在其名称后紧接尖括号，内部包含泛型类型参数。
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span> <span class="nc">Point</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">x</span>: <span class="nc">T</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">y</span>: <span class="nc">T</span><span class="p">,</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Point</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">x</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">y</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">,</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>函数、方法或 trait</strong>：
   定义泛型函数、方法或 trait 时，在其名称后紧接尖括号，内部声明泛型参数。
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">fn</span> <span class="nf">my_function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">param</span>: <span class="nc">T</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">fn</span><span class="w"> </span><span class="nf">my_function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">param</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div></p>
 </li>
 </ul>
@@ -898,15 +944,15 @@
 <li>
 <p><strong><code>impl</code> 关键字后面</strong>：
   在对泛型类型实现某个 trait 时，使用<code>impl&lt;T: SomeTrait&gt;</code>来表示类型参数<code>T</code>带有某些约束。
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">impl</span><span class="o">&lt;</span><span class="n">T</span>: <span class="nc">Display</span><span class="o">&gt;</span><span class="w"> </span><span class="nb">ToString</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">{}</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">impl</span><span class="o">&lt;</span><span class="n">T</span><span class="p">:</span><span class="w"> </span><span class="nc">Display</span><span class="o">&gt;</span><span class="w"> </span><span class="nb">ToString</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>函数或方法参数中</strong>：
   在泛型函数或方法中，可以通过<code>where</code>子句在尖括号内施加更复杂的 trait 约束。
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">fn</span> <span class="nf">some_function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">param</span>: <span class="nc">T</span><span class="p">)</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">fn</span><span class="w"> </span><span class="nf">some_function</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">param</span><span class="p">:</span><span class="w"> </span><span class="nc">T</span><span class="p">)</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">where</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">T</span>: <span class="nc">SomeTrait</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">AnotherTrait</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">T</span><span class="p">:</span><span class="w"> </span><span class="nc">SomeTrait</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">AnotherTrait</span><span class="p">,</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">{}</span>
 </code></pre></div></p>
 </li>
@@ -916,7 +962,7 @@
 <li>
 <p><strong>结构体、函数、方法定义中</strong>：
   生命周期注解也使用尖括号，常见形式为撇号开始的小写字母，如<code>&lt;'a&gt;</code>，用于指定引用的有效期。
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">fn</span> <span class="nf">borrow_something</span><span class="o">&lt;&#39;</span><span class="na">a</span><span class="o">&gt;</span><span class="p">(</span><span class="n">item</span>: <span class="kp">&amp;</span><span class="o">&#39;</span><span class="na">a</span> <span class="nc">T</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">fn</span><span class="w"> </span><span class="nf">borrow_something</span><span class="o">&lt;&#39;</span><span class="na">a</span><span class="o">&gt;</span><span class="p">(</span><span class="n">item</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="o">&#39;</span><span class="na">a</span><span class="w"> </span><span class="nc">T</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 </code></pre></div></p>
 </li>
 <li>

@@ -1,0 +1,1119 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../emacs/">
+      
+      
+        <link rel="next" href="../../rust/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>PartA - yishang's notebook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="yishang&#39;s notebook" class="md-header__button md-logo" aria-label="yishang's notebook" data-md-component="logo">
+      
+  <img src="../../../assets/icon/image.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            yishang's notebook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PartA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../backend/mends_the_sky/" class="md-tabs__link">
+          
+  
+    
+  
+  女娲补天
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  课程
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../useful_resource/readeable/" class="md-tabs__link">
+          
+  
+    
+  
+  资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  about
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="yishang&#39;s notebook" class="md-nav__button md-logo" aria-label="yishang's notebook" data-md-component="logo">
+      
+  <img src="../../../assets/icon/image.svg" alt="logo">
+
+    </a>
+    yishang's notebook
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    女娲补天
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            女娲补天
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backend/mends_the_sky/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    补基础
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            补基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backend/basic/basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../backend/basic/red_black_tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    红黑树
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    课程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    编程语言
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            编程语言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emacs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emacs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PartA
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PartA
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pair-and-tupple" class="md-nav__link">
+    <span class="md-ellipsis">
+      pair and tupple
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pair and tupple">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#english" class="md-nav__link">
+    <span class="md-ellipsis">
+      english
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chinese" class="md-nav__link">
+    <span class="md-ellipsis">
+      chinese
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    <span class="md-ellipsis">
+      list
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#english_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      english
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chinese_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chinese
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../rust/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    rust
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            rust
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/rust_cheat_sheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CheatSheet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/questation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    思考
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    资料
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    非github资料
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            非github资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../useful_resource/readeable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    effictive_rust
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    about
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="part-3">part 3</h1>
+<h2 id="pair-and-tupple">pair and tupple</h2>
+<h4 id="english">english</h4>
+<p>OK. In this segment, we're going to start studying data and ML that's built out of smaller pieces of data. We're going to start with pairs. So, we've seen numbers, we've seen booleans, those are basic data values and we've seen various ways to program with them like conditionals or variables or functions. But we need some way to build up things that have fields, multiple parts of them. This is essential in any programming language. If you have programmed in a language like Java, you've probably programmed with arrays that contain multiple pieces or you've programmed with classes that had multiple fields that sort of thing. In ML, we are going to take a very sort of fundamental approach to it. We are going to start with tuples, which are a very direct way to have a fixed number of different data items, each of which can have different types and then in later segments, we'll start programming with lists that can have any length at run-time but all the pieces have to have the same type. These are not the only forms of compound data we will study but they will be enough for the first homework assignment and they'll get us started. So, we'll start with pairs, and the way I want you to think about pairs is that they are just things with two parts and so in terms of new language constructs we need a way to build pairs and we need a way to access the pieces of pairs. So, here on this slide I have the pair building expression and I have the answers to our three questions about them. In terms of syntax, we are going to write two expressions. We are going to separate them by a comma, put them in parentheses and that's the syntax for building a pair. What are the evaluation rules? Well what we are going to do is evaluate 'e1' to some value. Call it 'v1', 'e2' to a value called 'v2' and then that pair of values will be a value. So, one val new kind of value, something that's done evaluating, is a pair that holds itself values. We also have a new kind of type for these pairs. So, if 'e1' has some type say 'ta' and 'e2' has some type say 'tb' then the pair expression will have 'ta * tb'. So, just as the two parts of the pair, the types of those parts separated by a star. So, that's how we build pair expressions now how do we access the pieces? Well, I will show you a different way in the future but for now let's use these two constructs '#1' of an expression and '#2' of an expression. The evaluation rules are that we are going to evaluate that expression 'e' to some value it's going to be a pair and then '#1' will return the first part of that pair, and then '#2' would return the second part of the pair. So if 'x' is say the pair of four and 17 and we said '#1' of 'x', we'd get back 4. Type checking works similarly that 'e' in there better have a pair type, so it better be some 'ta * tb'. Otherwise this access expression doesn't type check and then '#1' of 'e' would have type 'ta' and '#2' of 'e' would have typed 'tb'. So those really are the rules but like anything you tend to really understand how they work by writing some programs and trying them out. So, let's just write a few functions that take or return pairs. So, how about I start with a 'swap' function maybe it takes one argument I'll call it 'pr' for pair maybe it has type 'int<em>bool' so it takes something whose first part is an 'int' and second part is a 'bool'. And maybe what I want to return is a new pair where I build the first piece out of '#2' of pair and the second piece out of '#1' of pair. All right. So I'll show you in a second an example of how that works. In the meantime, how about I just write some other functions here. How about I take, write a function that takes two pairs both of which have type 'int * int' and just adds up those four pieces that are in there. So what I want to return is '#1' of pair one plus '#2' of pair one. I can grab these four pieces in any order I want. '#1' of pair two plus '#2' of pair two. It's a perfectly reasonable function that takes as arguments two 'int * int' and returns an int. So the type of this whole thing would be '(int * int) * (int * int)', and it returns an 'int' let's put that in a comment. All right? Let's do a couple of more. Oh, here's one that I really like because this is something that's just completely natural to do and a pain to do in many programming languages. Let's take in a numerator and denominator x and y so just two arguments of type and. And let's return X divided by Y and the remainder of x and y. Now these operators have strange names in ML; div and mod but I can still write this. All I'm doing here is returning a pair of two expressions the result of X div Y and the result of X mod Y and so this function is going to take in two 'ints' * 'int' and it's going to return a pair of 'ints' three to val print loop and we actually print this out won't write those parentheses but it's just that simple. All right. How about one more, how about we take in a pair of integers and we sort that pair. So we're going to return a pair of 'int' * 'int' and if the first part of the pair is less than the second part of the pair then we'll just return the pair we started with because it's already sorted. Otherwise, let's swap it around and return '#2' of pair, '#1' of pair. All right? So that seems like a good set of example functions. Let's real quickly go over here, make sure that I actually wrote those correctly and they load up here, good. We see that swap is has type 'int'</em>'bool' arrow 'bool'<em>'int'. So how about I try that out how about I tried calling it with seven and true and I get true seven if I call it with let's say minus four and false should get false and minus four. Now, you might be thinking how does ML know that I'm calling it with a pair and not calling it with two arguments. Well, in a future lecture I will show you the ML that's actually exactly the same thing but for now we'll keep them as separate concepts. And let me try one more here how about sort pair of (3,4). I just get back the pair (3,4) of type 'int'</em>'int' and if instead I had maybe had a value that was (4,3) and then I said sort pair of X it would come back (3,4). Of course, I could have just directly asked sort pair (4,3) I would get the same answer of course. OK. So that's programming with pairs. Let's go back to the slides here and show you that while that's really all there is the pairs we can, in fact, generalize this idea to tuples. So a pair is just a two tuple. In general you can have any number of pieces. So to build a tuple with n pieces you just have n expression separated by commas the type of that thing will be all the types of the expressions separated by stars or something like 'int'<em>'int'</em>'int' would be a triple where each piece was 'int' and you access the pieces with '#1 e, #2 e, #3 e' and so forth. So you'll get a lot of experience on this because 'int'<em>'int</em>int' is in fact a common type for a lot of the problems on the first homework assignment. I also want to emphasize that without adding anything new to our language the rules I already showed you. You can nest tuples and other kinds of expressions as deep as you like. So, I have a few examples here on the slide we could type these into the redeveloped print loop or into an M-L file as well. But for example, if you write seven comma and then in it's own pair true comma nine. Well that's going to be a pair where the first part has type 'int' the second part is also a pair of type ('bool'<em>'int'). So the overall type is ('int</em>') parenthesis ('bool'<em>'int'). Therefore, if you took that x 1 and you applied the hash to operation to it (#2 x1) is going to give back a ('bool'</em>'int'). So if we then added #1 of that so #1 of #2 of x 1 that would give you back something of type bool and in fact x 2 would evaluate to true. Similarly, x 3 which is this #2 of x 1 makes perfect sense. The result we look up X-1 in our environment we get (7, (true, 9)) we do #2 that, we're going to get (true, 9) and that's a perfectly reasonable value of type ('bool'*'int') that we can then bind to x 3. And of course, these things can nest however deep you want. So, in this last line here maybe it's hard to follow all the parentheses or whatever but we just have a pair whose first part is a pair of 'ints' and whose second part is two pairs of pairs of 'ints' sorry, it's a pair of a pair of 'ints' hard to talk about easy to program with and you can see the type written here. So that's tuples.
+：已添加到所选项中。按 [CTRL + S] 另存为注释
+en
+​</p>
+<h4 id="chinese">chinese</h4>
+<p>好的，在这个部分，我们将开始研究由更小的数据片段构建的数据和机器学习。我们将从成对的数据开始。我们已经见过数字、布尔值，这些都是基本的数据值，并且我们已经见过用它们编程的各种方法，比如条件语句、变量或函数。但是我们需要一种方法来构建具有多个字段的数据结构。这在任何编程语言中都是必不可少的。如果你用过像Java这样的语言编程，你可能用过包含多个部分的数组，或者用过具有多个字段的类。在ML中，我们将采取一种非常基础的方法。我们将从元组开始，这是一种非常直接的方式，可以拥有固定数量的不同数据项，每个数据项可以有不同的类型，然后在后面的部分中，我们将开始用列表编程，列表可以在运行时具有任意长度，但所有部分必须具有相同的类型。这些不是我们将要研究的唯一复合数据形式，但它们足以完成第一个作业，并且能让我们开始。</p>
+<p>我们将从对（pairs）开始，我希望你这样理解对：它们就是有两个部分的东西。因此，在新语言结构方面，我们需要一种构建对的方法，以及一种访问对的部分的方法。在这张幻灯片上，我有对构建表达式，并且有关于它们的三个问题的答案。在语法方面，我们将写两个表达式。我们将用逗号分隔它们，并将它们放在括号中，这就是构建对的语法。评估规则是什么？我们将要做的是将'e1'评估为某个值，称之为'v1'，将'e2'评估为值'v2'，然后这对值将成为一个值。因此，一种新的值类型，一种已经完成评估的东西，是一个持有自身值的对。我们也有这些对的新类型。因此，如果'e1'有一些类型，比如'ta'，'e2'有一些类型，比如'tb'，那么对表达式将具有'ta * tb'类型。因此，就像对的两个部分一样，这些部分的类型用星号分隔。这就是我们构建对表达式的方式，那么我们如何访问部分呢？我将向你展示未来的不同方式，但现在让我们使用这两种构造：'#1'和一个表达式，'#2'和一个表达式。评估规则是我们将评估那个表达式'e'为某个值，它将是一个对，然后'#1'将返回该对的第一部分，'#2'将返回该对的第二部分。因此，如果'x'是4和17的对，我们说'#1'的'x'，我们将得到4。类型检查的工作方式类似，'e'在那里最好有一个对类型，所以它最好是一些'ta * tb'。否则这个访问表达式不会类型检查，然后'#1'的'e'将具有类型'ta'，'#2'的'e'将具有类型'tb'。所以这些确实是规则，但像任何东西一样，你往往通过编写一些程序并尝试它们来真正理解它们是如何工作的。</p>
+<p>让我们写几个接受或返回对的函数。我从一个'swap'函数开始，也许它接受一个参数，我称之为'pr'，也许它具有类型'intbool'，所以它接受一个东西，其第一部分是'int'，第二部分是'bool'。也许我想要返回的是一个新的对，我构建第一部分用'#2'的对，第二部分用'#1'的对。好的。我将在一秒钟内向你展示一个例子，说明它是如何工作的。与此同时，我在这里写一些其他函数。我写一个函数，它接受两个对，每个对都有类型'int * int'，并简单地将这四个部分相加。所以我想要返回的是'#1'的对一加'#2'的对一。我可以以任何顺序抓取这四个部分。'#1'的对二加'#2'的对二。这是一个完全合理的函数，它接受两个'int * int'作为参数，并返回一个int。所以这个整体的类型将是'(int * int) * (int * int)'，它返回一个'int'，让我们在注释中写上这个。好的？让我们再写几个。哦，这里有一个我真的很喜欢的，因为这在很多编程语言中做起来很自然，但很痛苦。让我们接受一个分子和分母x和y，所以只是两个类型为int的参数。让我们返回x除以y和x除以y的余数。现在这些操作符在ML中有奇怪的名字；div和mod，但我仍然可以写这个。我所做的是返回一个由两个表达式组成的对，x div y的结果和x mod y的结果，所以这个函数将接受两个'ints' * 'int'，并返回一个'ints'的对。好的。再写一个，我们接受一个整数的对，并对其进行排序。所以我们返回一个'int' * 'int'的对，如果对的第一部分小于对的第二部分，那么我们就返回我们开始的对，因为它已经排序了。否则，让我们交换它并返回'#2'的对，'#1'的对。好的？所以这似乎是一组很好的示例函数。让我们快速回到这里，确保我实际上写对了，它们加载到这里，好的。我们看到swap具有类型'int''bool'箭头'bool''int'。所以我尝试一下，我尝试用7和true调用它，我得到true 7，如果我用-4和false调用它，应该得到false和-4。现在，你可能会想，ML怎么知道我是在用一个对调用它，而不是用两个参数调用它。嗯，在未来的讲座中，我将向你展示ML实际上是完全相同的东西，但现在我们将把它们作为单独的概念保留。让我再试一个，比如对(3,4)进行排序。我直接得到对(3,4)，类型为'int''int'，如果我有一个值是(4,3)，然后我说对x进行排序，它会返回(3,4)。当然，我也可以直接问对(4,3)进行排序，我会得到同样的答案。好的。这就是用对编程。让我们回到幻灯片上，向你展示虽然这确实是对的全部内容，但我们实际上可以将对的概念推广到元组。所以一个对只是一个二元组。一般来说，你可以有任意数量的部分。因此，要构建一个有n个部分的元组，你只需要用逗号分隔的n个表达式，这个东西的类型将是所有表达式的类型用星号分隔，或者像'int''int''int'这样的三元组，每个部分都是'int'，你用'#1 e, #2 e, #3 e'等等来访问部分。所以你会在这个上有很多经验，因为'int''intint'确实是第一个作业中许多问题的常见类型。我还想强调，不需要向我们的语言添加任何新东西，我已经向你展示的规则。你可以将元组和其他类型的表达式嵌套到你喜欢的深度。所以，我在幻灯片上有几个例子，我们可以将它们输入到重新开发的打印循环或ML文件中。例如，如果你写7逗号，然后在它自己的对中写true逗号9。这将是一个对，其中第一部分具有类型'int'，第二部分也是一个对，类型为('bool''int')。所以整体的类型是('int')括号('bool''int')。因此，如果你取那个x1，然后对它应用哈希操作(#2 x1)，将返回一个('bool''int')。所以如果我们然后添加#1的那个，所以#1的#2的x1，那将给你返回一个类型为bool的东西，实际上x2将评估为true。类似地，x3，即这个#2的x1，是完全有意义的。我们在环境中查找X1，得到(7, (true, 9))，我们做#2的那个，我们将得到(true, 9)，这是一个完全合理的类型为('bool'*'int')的值，我们可以将其绑定到x3。当然，这些东西可以嵌套到你想要的深度。所以，在这最后一行，也许很难跟踪所有的括号或其他什么，但我们只是有一个对，其第一部分是一个'int'的对，其第二部分是两个'int'的对的对，抱歉，是一个'int'的对的对，很难谈论，但很容易编程，你可以看到这里写的类型。所以这就是元组。</p>
+<h2 id="list">list</h2>
+<h4 id="english_1">english</h4>
+<p>In this segment we'll start studying lists. Right now we're just going to learn the basic rules for them, and then in the next segment, we'll program with functions that either take lists or produce lists, just to break things into slightly smaller pieces. we've already seen one way to build up compound data, and that was with tuples, and they're a nice contrast with lists. Tuples, even though we can make them as wide as we wanted or as deep as we wanted, touples inside of touples. We still had to pick that size when we were writing the program. So there was no way with tuples, as they take in a number like 10, or n, or x, and then produce a tuple that had that many pieces, because there be no type to write down for that thing, because you don't know the size until you run the program. So lists don't have that restriction. We're going to be able to build lists with any number of elements and we won't be limited by the type of the list. But there's a tradeoff here, and that is that any list we build will have to have pieces that all have the same type. And that's just the rule for lists in ML, and we'll learn in future a segments and parts of the course how to program around that restriction by using other concerts of the language. Alright, so to understand lists just like with tuples, we're going to have ways to build them and we're going to have ways to use them. So let's start with how we can build lists. The simplest list has zero elements in it, and you build that zero element list by just writing left bracket, right bracket. This is itself a value, so the evaluation rule is trivial. The syntax evaluates to itself, and that's the empty list. Now, if you wanted a list with multiple elements in it, you can just write those down seperated by commas. So let me show you a few examples here so I can really write the empy list, and that's its value. You see the type there, quote A list. We'll get back to that in a few minutes. Let's ignore that for now. I could also make a list three, four, five, and that would hold three, four, five. You can see from the type here. It's a list of, of ints, so it doesn't matter how many elements are in it. A two-element list has the same number, has the same type and so does a four-element list, and so on. these are all values because a list of values is a value. But, I could put expressions in here, three plus four seven, like this and it will evaluate each of those. So, this is the list holding a three and then a seven and then a seven. You don't have to have lists of integers you can have list of Booleans as well. So here's a three element bool list, but you can't mix them. So if I had something like three, four plus five, true, than that's going to give a type error, the same way four plus true gives a type error. All the elements of the list have to have the same type. Of course these are just values, I combined a list to a variable and so on. Okay, so there's one other way to build lists, which is very useful, and that's using this colon, colon operation, which I'll pronounce cons, for constructing a list. Cons, C, O, N, S, and here's how it works. All it does is evaluate e one to some value. E2 to some value that is itself a list. And then it makes a list that has one more element than that list E2 evaluated to. Mainly it puts the result of E1 on the front of the list. So if I flip back here, remember, X is this list 789 I could say five cons onto X. Now it produced the list 5789. You can even say six cons don to five cons don to x. The parenthesis would go like this, you don't actually need them. and that would be 6, 5, 7, 8, 9, and so on. Alright? One thing you can't do is something like this, alright, and that just doesn't type check, and that's because we're trying to take a list of integers, namely the list holding six, and put that on the front of a list of integers. And a list of integers can't hold a list of integers. It is a list of integers, so this is the correct thing to do. You can have a list of a list of integers, so I could cons that six onto a list of list of integers, maybe like this. Alright, and now indeed, I have a list holding three lists of integers. The first is the list six, the second the list 7, 5, and third the list 5, 2. Alright, so that's how to build lists, now how about using them. Well, we need a way to access the pieces, and we need to know a way to find out if our list is empty or not, because if you try to access the pieces of an empty list, you get a runtime error. So let's do that test first. There's a function in ML called null, n, u, l, l. Do not think of this like the null in Java or C+++ or any number of other languages. This is a function that takes a list as an argument and returns true if that list is empty and false otherwise. So for example, if I ask null of X, I'll get false because remember, X is not the empty list, but if I ask null of the empty list I get true and indeed if some other list was empty and I asked null of that, I would get true. So, once you know a list is not empty, it's reasonable to ask for its head, the first element of the list, or it's tail, which is the list, which is all the elements except the first one. And these are the two operations we are going to use to access the pieces of the list. So the head function, spelled HD, just takes a list and returns the first element. The tail function takes a list and returns all the other elements. Alright? So these are just functions. So I can just call them like any other functions. So if I ask for head of X, I get seven cause remember X is this example list, 7-8-9. I can ask tail of X, that will give me back the list 8-9. If I wanted the first element of that list, I'd have to ask head of tail of X, then I would get eight. Can ask of course, also get tail of tail of X. That would be the one element list nine. You could also ask tail of tail of tail of X. What's the tail of a one M element list? It's the zero element list. So this is the empty list. Now if you asked head or tail of that, that would type check just fine, that if I actually evaluate this, I get an uncaught exception for trying to take head or tail of the empty list. I get the same thing if I use head. Alright. So that's accessing the pieces of lists. We've really focused here on the syntax and the evaluation rules. So now let's switch to talking a little more of the types of lists and the types of functions for making them and using them. So, just like when we had a tuples, we had a new way of writing types. So int star int was a pair of ints for example. We have a new types for lists. So for any type t, the type t space list describes the values that are lists holding key elements in them. So, as we've seen in the examples, int list is a list of int. bool list is a list of bools, and so on. Now these things can nest, I think I've shown you a little bit of this, if I make a list of pairs events. That's fine, that's an int star int list. It's a list whose elements have type int star int. So I try to do something like cons, three onto that, it won't type check, but if I try to cons a pair of ints onto that, will type check just fine. Alright, so you can nest these things however you want. You could have a list with another list of ints inside of it. I've shown you one of those. You can have a list with a pair in it and where that pair has a list inside of it and so on. All right, but what about the types of the operations I've given you for building lists and accessing lists? So probably the hardest one to understand is the type of the empty list. So I've showed you before, this has the type written quote, a space list. And I always pronounce quote a as alpha, like the Greek letter. So we say that the empty list has type alpha lists. What that actually means is that you can replace that alpha with any type you want. So the empty list can have type int list, but it can also have type bool list, and it can also have type int star int list, and so on. And that's good, because that's what let's us cons three onto the empty list to get an in list or true onto the empty list to get a bool list. So, the empty list is a special thing that can have lots of types. Its type is alpha list that lets it also have type T list for any type T. Alright, so we're going to see that as a theme with these other operations as well. The cons operator also works for any kind of list. The rule is E2 has to have type t list for some t, and then E1 has to have type t, because you have to add something of the correct type onto the list you started with. Then we have our operations for accessing list, testing if they're empty, getting their head, getting their tail, and these really are just functions in ML. So I have their types written here but we can also see that the read eval print
+从 :9:19 开始播放视频并学习脚本9:19
+loop. So null is just a function. Again, it's nothing like null in other languages, that takes in a list of any type alpha. So for all types alpha, you can take in an alpha list, and we'll give you back true or false. And that's why I can't ask null with a list of integers or with a list of Booleans. In a couple sections later in the course, we'll learn how to write our own functions that have types with these alphas in it, and other Greek letters if you like, but for now we're just going to use ones provided to us by the ml language. Similarly head takes in a list of alphas for any type alpha, and what you get back is an alpha. That's why, if you call head with a list of integers, you get back an integer, and if you call it with a list of Booleans, you get back a Boolean. And finally, tail takes a list and returns a list, alpha list to alpha list, and those two type, lists, have to have the same type, which is why, if I say tail of 3,4, I get an int list back, because I passed it in int list. Alright? So now we know our key operations for building lists and accessing lists. What we'll do next is a very powerful, very common thing in functional programming, which is to write useful functions that take in return lists.</p>
+<h4 id="chinese_1">Chinese</h4>
+<p>在这个部分，我们将开始研究列表。现在我们只是要学习它们的基本规则，然后在下一部分，我们将用函数编程，这些函数要么接受列表，要么产生列表，只是为了把事情分成稍微小一点的块。我们已经看到了一种构建复合数据的方法，那就是用元组，它们与列表形成了很好的对比。元组，尽管我们可以使它们尽可能宽或尽可能深，元组内部的元组。我们仍然必须在编写程序时选择那个大小。所以用元组，当它们接受一个数字，比如10，或者n，或者x，然后产生一个有那么多部分的元组，因为没有类型可以写下来，因为你不知道大小，直到你运行程序。所以列表没有这个限制。我们将能够构建具有任意数量元素的列表，并且我们不会受到列表类型的限制。但这里有一个权衡，那就是我们构建的任何列表都必须有相同类型的部分。这只是ML中列表的规则，我们将在未来的部分和课程的部分学习如何通过使用语言的其他概念来绕过这个限制。好的，所以为了理解列表，就像用元组一样，我们将有构建它们的方法，我们将有使用它们的方法。让我们从我们如何构建列表开始。最简单的列表有零个元素，你通过写左括号，右括号来构建那个零元素列表。这是一个值，所以评估规则是微不足道的。语法评估为自身，这就是空列表。现在，如果你想要一个有多个元素的列表，你可以只写那些用逗号分隔的元素。让我在这里给你看几个例子，所以我可以真正写空列表，这就是它的值。你看到那里的类型，引号A列表。我们几分钟后会回到那个。现在让我们忽略这一点。我也可以做一个列表三，四，五，那将持有三，四，五。你可以从这里的类型看到。这是一个整数的列表，所以不管它有多少元素。一个两元素列表有相同的数字，有相同的类型，所以一个四元素列表也是如此，等等。这些都是值，因为值的列表是一个值。但是，我可以在这里放表达式，三加四七，像这样，它会评估每一个。所以，这是持有三，然后七，然后七的列表。你不必有整数列表，你也可以有布尔列表。所以这里有一个三元素布尔列表，但你不能混合它们。所以如果我有三，四加五，真，那么这将给出一个类型错误，就像四加真给出类型错误一样。列表的所有元素必须有相同的类型。当然，这些只是值，我可以将列表组合到一个变量等等。好的，所以还有另一种构建列表的方法，这是非常有用的，那就是使用这个冒号，冒号操作，我会发音为cons，用于构建列表。Cons，C，O，N，S，这就是它的工作原理。它所做的就是评估e1为某个值。E2为某个值，它本身是一个列表。然后它制作一个比那个列表E2评估的列表多一个元素的列表。主要是在列表的前面加上E1的结果。所以如果我翻回来，记住，X是这个列表789我可以说五cons到X。现在它产生了列表5789。你甚至可以说六cons到五cons到x。括号会像这样，你实际上不需要它们。那就是6，5，7，8，9，等等。好的？你不能做的是这样的事情，好的，那只是类型检查，那是因为我们试图取一个整数列表，即持有六的列表，并将其放在一个整数列表的前面。而一个整数列表不能持有整数列表。它是一个整数列表，所以这是正确的事情要做。你可以有一个整数列表的列表，所以我可以cons那个六到一个整数列表的列表，也许像这样。好的，现在确实，我有一个持有三个整数列表的列表。第一个是列表六，第二个是列表7，5，第三个是列表5，2。好的，这就是如何构建列表，现在如何使用它们。我们需要一种访问部分的方法，我们需要知道一种找出我们的列表是否为空的方法，因为如果你试图访问空列表的部分，你会得到一个运行时错误。所以让我们先做那个测试。ML中有一个函数叫做null，n，u，l，l。不要认为这就像Java或C+++或其他许多语言中的null。这是一个函数，它接受一个列表作为参数，如果该列表为空则返回true，否则返回false。例如，如果我问null的X，我会得到false，因为记住，X不是空列表，但如果我问null的空列表，我得到true，确实，如果其他列表是空的，我问null的那个，我会得到true。所以，一旦你知道一个列表不是空的，问它的头，列表的第一个元素，或者它的尾，这是列表，这是除了第一个元素之外的所有元素，这是合理的。这是我们将用来访问列表部分的两个操作。所以头函数，拼写为HD，只接受一个列表并返回第一个元素。尾函数接受一个列表并返回所有其他元素。好的？所以这些只是函数。所以我可以像任何其他函数一样调用它们。所以如果我问头的X，我得到七，因为记住X是这个例子列表，7-8-9。我可以问尾的X，那会给我返回列表8-9。如果我想要那个列表的第一个元素，我必须问头的尾的X，那么我会得到八。当然也可以问尾的尾的X。那将是一个元素列表九。你也可以问尾的尾的尾的X。一个M元素列表的尾是什么？它是零元素列表。所以这是空列表。现在如果你问头或尾的那个，那会类型检查，那如果我实际上评估这个，我得到一个未捕获的异常，试图取头或尾的空列表。我得到同样的东西，如果我使用头。好的。所以这就是访问列表的部分。我们在这里真的专注于语法和评估规则。现在让我们切换到谈论列表的类型和制作和使用它们的函数的类型。所以，就像当我们有元组时，我们有一种新的写类型的方式。所以int star int是一个整数对的例子。我们有列表的新类型。所以对于任何类型t，类型t空间列表描述了持有键元素的列表的值。所以，正如我们在例子中看到的，int list是一个整数列表。bool list是一个布尔列表，等等。现在这些事情可以嵌套，我想我已经向你展示了一点这个，如果我做一个对事件的列表。那很好，那是int star int list。它是一个元素类型为int star int的列表。所以如果我尝试cons，三到那个，它不会类型检查，但如果我尝试cons一个整数对到那个，会类型检查。好的，所以你可以嵌套这些事情，只要你想要。你可以有一个内部有另一个整数列表的列表。我已经向你展示了一个。你可以有一个对中有列表的对的列表，等等。好的，但是关于我给你的构建列表和访问列表的操作的类型呢？所以可能最难理解的是空列表的类型。所以我之前向你展示过，这个类型写为引号，一个空间列表。我总是发音引号a为alpha，像希腊字母。所以我们说空列表有类型alpha列表。这实际上意味着你可以用任何类型替换那个alpha。所以空列表可以有类型int list，但它也可以有类型bool list，它也可以有类型int star int list，等等。这是好的，因为这让我们可以cons三到空列表得到一个in列表或者真到空列表得到一个bool列表。所以，空列表是一个特殊的东西，它可以有很多类型。它的类型是alpha列表，这让它也可以有类型T列表，对于任何类型T。好的，所以我们会看到这和其他操作也是一个主题。cons操作符也适用于任何类型的列表。规则是E2必须有类型t列表，对于某些t，然后E1必须有类型t，因为你必须添加正确类型的东西到你开始的列表。然后我们有我们的操作来访问列表，测试它们是否为空，得到它们的头，得到它们的尾，这些真的只是ML中的函数。所以我在这里写了它们的类型，但我们也可以看到那个读评估打印循环。所以null只是一个函数。再次，它不像其他语言中的null，它接受任何类型的列表alpha。所以对于所有类型alpha，你可以接受一个alpha列表，我们会给你返回真或假。这就是为什么我不能问null一个整数列表或一个布尔列表。在课程后面的几个部分，我们将学习如何编写我们自己的函数，这些函数有这些alpha的类型，如果你喜欢，还有其他希腊字母，但现在我们只是要使用ML语言提供给我们的那些。类似地，头接受任何类型的列表alpha，你得到的是一个alpha。这就是为什么，如果你用一个整数列表调用头，你得到一个整数，如果你用一个布尔列表调用它，你得到一个布尔。最后，尾接受一个列表并返回一个列表，alpha列表到alpha列表，这两个类型，列表，必须有相同的类型，这就是为什么，如果我说尾的3，4，我得到一个整数列表回来，因为我传入了一个整数列表。好的？所以现在我们知道我们构建列表和访问列表的关键操作。我们将要做的是在函数编程中非常强大，非常常见的事情，那就是编写有用的函数，这些函数接受返回列表。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.path", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
