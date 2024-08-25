@@ -81,9 +81,11 @@ nav:
         - 编程语言 : 
             - OverView : course/programming_languages/index.md
             - Emacs : course/programming_languages/emacs.md
+            - PartA : course/programming_languages/partA.md
         - rust:
             - OverView : course/rust/index.md
             - CheatSheet : course/rust/rust_cheat_sheet.md
+            - 思考 : course/rust/questation.md
     - 资料:
         - 非github资料 :
                 - effictive_rust: useful_resource/readeable.md
